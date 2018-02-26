@@ -35,6 +35,15 @@ gulp.task('watch', function(){
     });
 
     watch('./app/assets/styles/**/*.css', function() {
-        gulp.start('styles')
+        gulp.start('cssInject')
     });
+});
+
+
+// In this function, we want to take the content of our compiled CSS file
+// And we want to hand that over to browser sync
+// So it can inject those styles into the page on the fly
+gulp.task('cssInject', ['styles'], function() {
+    return gulp.src('./app/temp/styles/styles.css')
+        .pipe(browserSync.stream());
 });
