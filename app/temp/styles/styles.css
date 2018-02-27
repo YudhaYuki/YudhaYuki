@@ -573,7 +573,16 @@ a {
         padding-right: 4.0625rem;
     }
 
+.row__b-margin-until-medium {
+        margin-bottom: 1rem;
+    }
+
 @media (min-width: 50rem) {
+
+        .row__b-margin-until-medium {
+            margin-bottom: 0;
+        }
+
         .row__medium-4 {
             float: left; 
             width: 33.33%;
