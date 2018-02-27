@@ -473,6 +473,17 @@ img{
         padding-right: 0;
     }
 
+.wrapper--b-margin {
+        margin-bottom: 1rem;
+    }
+
+@media (min-width: 33.125rem) {
+
+.wrapper--b-margin {
+            margin-bottom: 3.875rem
+    }
+    }
+
 .page-section {
 
     padding: 1.2rem 0;
