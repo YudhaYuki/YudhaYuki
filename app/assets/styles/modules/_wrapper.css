@@ -3,4 +3,17 @@
     max-width: 75rem;
     margin-left: auto;
     margin-right: auto;
+
+    &--medium {
+        max-width: 61rem;
+    }
+
+    /* 
+    Any wrapper that is nested within another wrapper
+    Should no longer have any horizontal padding
+    */
+    .wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
