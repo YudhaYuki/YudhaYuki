@@ -1,7 +1,11 @@
 .row {
 
     @mixin clearfix;
-    
+
+    &--gutters > div {
+        padding-right: 4.0625rem;
+    }
+
     &__4 {
         float: left; 
         width: 33.33%;
