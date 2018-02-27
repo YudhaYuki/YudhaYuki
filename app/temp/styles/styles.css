@@ -449,10 +449,18 @@ img{
 
 .wrapper {
     padding: 0 1.125rem 0 1.125rem;
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .page-section {
     padding: 4.5rem 0;
 }
+
+.page-section--blue {
+        background-color: #2f5572;
+        color: #fff;
+    }
 
 
