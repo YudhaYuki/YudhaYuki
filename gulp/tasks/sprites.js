@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var svgSprite = require('gulp-svg-sprite');
+var rename = require('gulp-rename');
 
 var config = {
     mode: {
@@ -19,3 +20,8 @@ gulp.task('createSprite', function() {
         .pipe(gulp.dest('./app/temp/sprite/'));
 });
 
+gulp.task('copySpriteCSS', function() {
+    return gulp.src('./app/temp/sprite/css/*.css')
+        .pipe(rename('_sprite.css'))
+        .pipe(gulp.dest('./app/assets/styles/modules'));
+});
