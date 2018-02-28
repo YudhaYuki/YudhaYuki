@@ -1,0 +1,6 @@
+.site-header {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    background: rgba($mainBlue, .3);
+}
