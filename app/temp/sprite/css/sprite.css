@@ -1,4 +1,7 @@
-/* Testing 123 */
+/* 
+Do not edit modules/_sprites directly as it is generated automatically by Gulp.
+Instead, edit gulp/templates/sprite
+*/
 
 
         .icon {
