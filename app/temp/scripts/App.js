@@ -67,6 +67,15 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 /* 
 var yudha = {
     name: "Yudha Yuki",
@@ -78,9 +87,6 @@ var yudha = {
 
 yudha.greet();
 */
-
-
-
 
 /*
 // The THIS keyword is what allows our blue print function to be flexible/recyclable
@@ -100,21 +106,29 @@ var jane = new Person("Jane Smith", "green");
 jane.greet();
 */
 var $ = __webpack_require__(1);
-var Person = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./modules/Personnn\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var Person = __webpack_require__(2);
+
+var Adult = function (_Person) {
+    _inherits(Adult, _Person);
+
+    function Adult() {
+        _classCallCheck(this, Adult);
+
+        return _possibleConstructorReturn(this, (Adult.__proto__ || Object.getPrototypeOf(Adult)).apply(this, arguments));
+    }
+
+    return Adult;
+}(Person);
 
 alert("TEST 12345");
 
 var john = new Person("John Doe", "blue");
 john.greet();
 
-var jane = new Person("Jane Smith", "green");
+var jane = new Adult("Jane Smith", "green");
 jane.greet();
 
 $("h1").remove();
-
-
-
-
 
 /***/ }),
 /* 1 */
@@ -10486,6 +10500,37 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Person = function () {
+    function Person(fullName, favColor) {
+        _classCallCheck(this, Person);
+
+        this.name = fullName;
+        this.favoriteColor = favColor;
+    }
+
+    _createClass(Person, [{
+        key: "greet",
+        value: function greet() {
+            console.log("Hi there, my name is " + this.name + " and my favorite color is " + this.favoriteColor + ".");
+        }
+    }]);
+
+    return Person;
+}();
+
+module.exports = Person;
 
 /***/ })
 /******/ ]);

@@ -31,14 +31,18 @@ var jane = new Person("Jane Smith", "green");
 jane.greet();
 */
 var $ = require('jquery');
-var Person = require('./modules/Personnn');
+var Person = require('./modules/Person');
+
+class Adult extends Person {
+
+}
 
 alert("TEST 12345");
 
 var john = new Person("John Doe", "blue");
 john.greet();
 
-var jane = new Person("Jane Smith", "green");
+var jane = new Adult ("Jane Smith", "green");
 jane.greet();
 
 $("h1").remove();
