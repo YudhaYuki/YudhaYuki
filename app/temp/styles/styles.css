@@ -1062,7 +1062,8 @@ Instead, edit gulp/templates/sprite
         right: 10px;
     }
 
-.site-header__menu-icon__top {
+.site-header__menu-icon::before {
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
@@ -1080,7 +1081,8 @@ Instead, edit gulp/templates/sprite
             background-color: #fff;
         }
 
-.site-header__menu-icon__bottom {
+.site-header__menu-icon::after {
+            content: "";
             position: absolute;
             bottom: 0;
             left: 0;
