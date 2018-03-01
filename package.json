@@ -1,9 +1,14 @@
 {
   "name": "warna-travel-site",
   "version": "1.0.0",
+  "scripts": {
+    "webpack": "webpack",
+    "watch": "gulp watch"
+  },
   "dependencies": {
     "jquery": "^3.3.1",
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.0",
+    "webpack": "^3.8.1"
   },
   "devDependencies": {
     "autoprefixer": "^8.0.0",
