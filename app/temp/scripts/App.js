@@ -100,9 +100,9 @@ var jane = new Person("Jane Smith", "green");
 jane.greet();
 */
 var $ = __webpack_require__(1);
+var Person = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./modules/Personnn\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
-var Person = __webpack_require__(2);
-
+alert("TEST 12345");
 
 var john = new Person("John Doe", "blue");
 john.greet();
@@ -10444,9 +10444,9 @@ jQuery.isNumeric = function( obj ) {
 // https://github.com/jrburke/requirejs/wiki/Updating-existing-libraries#wiki-anon
 
 if ( true ) {
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function() {
 		return jQuery;
-	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+	}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 }
 
@@ -10486,20 +10486,6 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-function Person(fullName, favColor) {
-    this.name = fullName;
-    this.favoriteColor = favColor;
-    this.greet = function() {
-        console.log("Hello, my name is " + this.name + " and my favorite color is " + this.favoriteColor + ".");
-    }
-}
-
-module.exports = Person;
 
 /***/ })
 /******/ ]);
