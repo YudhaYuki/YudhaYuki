@@ -40,13 +40,39 @@
     }
 
     &__menu-icon {
-        width: 1.25rem;
-        height: 1.25rem;
-        background-color: #fff;
+        width: 20px;
+        height: 19px;
         position: absolute;
         z-index: 10;
         top: 10px;
         right: 10px;
+
+        &__top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 3px;
+            background-color: #fff;
+        }
+
+        &__middle {
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 20px;
+            height: 3px;
+            background-color: #fff;
+        }
+
+        &__bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 20px;
+            height: 3px;
+            background-color: #fff;
+        }
 
         @mixin atMedium {
             display: none;
