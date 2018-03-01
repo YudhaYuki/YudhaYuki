@@ -31,10 +31,13 @@ var jane = new Person("Jane Smith", "green");
 jane.greet();
 */
 var $ = require('jquery');
-var Person = require('./modules/Person');
+// var Person = require('./modules/Person');
+import Person from './modules/Person'; 
 
 class Adult extends Person {
-
+    payTaxes() {
+        console.log(this.name + " now owes $0 in taxes.");
+    }
 }
 
 alert("TEST 12345");
@@ -42,8 +45,10 @@ alert("TEST 12345");
 var john = new Person("John Doe", "blue");
 john.greet();
 
-var jane = new Adult ("Jane Smith", "green");
+var jane = new Adult("Jane Smith", "Orange");
 jane.greet();
+
+jane.payTaxes();
 
 $("h1").remove();
 
