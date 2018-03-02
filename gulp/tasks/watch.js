@@ -3,8 +3,16 @@ var watch = require('gulp-watch');
 var browserSync = require('browser-sync').create();
 
 gulp.task('watch', function(){
-    
+        /*
         browserSync.init({
+            server: {
+                baseDir: "app"
+            }
+        });
+        */
+
+        browserSync.init({
+            notify: false,
             server: {
                 baseDir: "app"
             }
