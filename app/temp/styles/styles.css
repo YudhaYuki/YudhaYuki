@@ -1241,6 +1241,10 @@ Instead, edit gulp/templates/sprite
             padding: .75rem 0;
             background-color: transparent
     }
+            
+            .primary-nav a.is-current-link{
+                color: #fabb69;
+            }
     }
 
 .reveal-item {
