@@ -11401,11 +11401,26 @@ var StickyHeader = function () {
                 var currentPageSection = this;
                 new Waypoint({
                     element: currentPageSection,
-                    handler: function handler() {
-                        var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
-                        that.headerLinks.removeClass("is-current-link");
-                        (0, _jquery2.default)(matchingHeaderLink).addClass("is-current-link");
-                    }
+                    handler: function handler(direction) {
+                        if (direction == "down") {
+                            var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
+                            that.headerLinks.removeClass("is-current-link");
+                            (0, _jquery2.default)(matchingHeaderLink).addClass("is-current-link");
+                        }
+                    },
+                    offset: "18%"
+                });
+
+                new Waypoint({
+                    element: currentPageSection,
+                    handler: function handler(direction) {
+                        if (direction == "up") {
+                            var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
+                            that.headerLinks.removeClass("is-current-link");
+                            (0, _jquery2.default)(matchingHeaderLink).addClass("is-current-link");
+                        }
+                    },
+                    offset: "-40%"
                 });
             });
         }
