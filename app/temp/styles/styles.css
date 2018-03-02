@@ -734,26 +734,26 @@ a {
 
 @media (min-width: 50rem) {
 
-.row--equal-height-at-medium {
+.flexbox .row--equal-height-at-medium {
           display: flex
     
       }
     }
 
-.row--equal-height-at-medium > div {
+.flexbox .row--equal-height-at-medium > div {
           float: none;
           display: flex;
         }
 
 @media (min-width: 63.125rem) {
 
-.row--equal-height-at-large {
+.flexbox .row--equal-height-at-large {
           display: flex
     
       }
     }
 
-.row--equal-height-at-large > div {
+.flexbox .row--equal-height-at-large > div {
           float: none;
           display: flex;
         }
