@@ -1,13 +1,12 @@
 .large-hero{
     border-bottom: 5px solid $mainBlue;    
     position: relative;
+    width: auto;
+    height: 100vh;
+    display: block;
 
     @mixin atSmall {
         border-bottom: 10px solid $mainBlue; 
-    }
-
-    &__image {
-        display: block;
     }
 
     &__text-content {
@@ -58,49 +57,5 @@
         @mixin atSmall {
             font-size: 1.875rem;
         }
-    }
-}
-
-.my-name__title {
-    animation: moveInLeft 1s ease-out;
-    /* 
-    animation-delay: 1.5s; 
-    animation-iteration-count: 2;
-    */
-}
-
-.my-name__subtitle  {
-    animation: moveInRight 1s ease-out;
-}
-
-@keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-
-    80% {
-        transform: translateX(10px);         
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-
-    80% {
-        transform: translateX(-10px);         
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
     }
 }

@@ -5,6 +5,25 @@
         padding-top: 0;
     }
 
+    &--link {
+
+        &:link,
+        &:visited {
+            /* padding: 1rem 2rem; */
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $mainOrange 50%);
+            background-size: 250%;
+            transition: all .4s;
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $mainBlue;
+            transform: translateY(-.1rem);
+        }
+
+    }
+
     &--pull-right {
 
         @mixin atMedium {
