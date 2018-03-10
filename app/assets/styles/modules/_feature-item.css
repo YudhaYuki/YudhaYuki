@@ -2,9 +2,9 @@
     position: relative;
     padding-bottom: 2.5rem;
 
-    @mixin atSmall {
+    /* @mixin atSmall {
         padding-left: 5.875rem;        
-    }
+    } */
 
 
     &__icon {

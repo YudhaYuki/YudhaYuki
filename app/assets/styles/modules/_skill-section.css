@@ -1,0 +1,64 @@
+.skill-section {
+
+    &--container {
+        width: 80%;
+        background-color: #ddd;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &--items {
+        background-color: $mainBlue;
+        margin: 5px 0;
+        color: white;    
+        text-align: left;
+        padding-left: 1rem;
+        line-height: 40px;    
+
+        &-one {
+            width: 85%;
+        }
+
+        &-two {
+            width: 85%;
+        }
+
+        &-three {
+            width: 40%;
+        }
+
+        &-four {
+            width: 45%;
+        }
+
+        &-five {
+            width: 35%;
+        }
+
+        &-six {
+            width: 70%;
+        }
+
+        &-seven {
+            width: 50%;
+        }
+
+        &-eight {
+            width: 45%;
+        }
+
+        &-nine {
+            width: 60%;
+        }
+
+        &-ten {
+            width: 50%;
+        }
+    }
+}
+  
+
+  
+
+  

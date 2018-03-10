@@ -1,10 +1,13 @@
-/* 
-$mainBlue: #7ed56f;
-$mainBlue: #28b485;
-$mainBlue: #55c57a;
- */
 $mainBlue: #2f5572;
 $secondBlue: #e0e6ef;
-
 $mainOrange: #d59541;
 
+$greenPrimary: #55c57a;
+$greenPrimaryLight: #7ed56f;
+$greenPrimaryDark: #28b485;
+
+$yellowPrimaryLight: #ffb900;
+$yellowPrimaryDark: #ff7730;
+
+$purplePrimaryLight: #2998ff;
+$purplePrimaryDark: #5643fa;

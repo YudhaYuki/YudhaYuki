@@ -1,0 +1,114 @@
+.card {
+    perspective: 150rem;
+    /* -moz-perspective: 150rem; */
+    position: relative;
+    height: 20rem;   
+    margin: 3rem 0; 
+
+    &--side {
+        height: 20rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+
+        &-front {
+            background-color: #fff;
+            color: $mainBlue;                        
+        }
+
+        &-back {
+            color: white;            
+            background-color: green;
+            transform: rotateY(180deg);  
+            
+            &-1 {
+                background-image: linear-gradient(to right bottom, $yellowPrimaryLight, $yellowPrimaryDark);
+            }
+        }
+    }
+
+    &:hover &--side-front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &--side-back {
+        transform: rotateY(0);
+    }
+
+    &__picture {
+        background-size: cover;
+        height: 18rem;
+        /*width: auto; */
+        background-blend-mode: screen;
+        margin: 1rem;
+
+        &--1 {
+            background-image:url(/assets/images/logo-natours.png)
+            /* linear-gradient(to right bottom, $yellowPrimaryLight, $yellowPrimaryDark) */
+            ;
+        }
+
+        &--2 {
+            background-image: url(/assets/images/logo-bigdayout.png);
+        }
+
+        &--3 {
+            background-image: url(/assets/images/logo-warna-holiday.png);
+        }
+
+        &--4 {
+            background-image: url(/assets/images/logo-multi-page-theme.png);
+        }
+
+        &--5 {
+            background-image: url(/assets/images/logo_budgety.png);
+        }
+
+        &--6 {
+            background-image: url(/assets/images/logo-mizuxe.png);
+        }
+
+        &--7 {
+            background-image: url(/assets/images/logo-nexter.png);
+        }
+
+        &--8 {
+            background-image: url(/assets/images/logo-portfolio.png);
+        }
+    }
+
+    &__heading-span {
+        padding: .5rem, 1rem;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($yellowPrimaryLight, .85), 
+            rgba($yellowPrimaryDark, .85));
+        }
+    }
+
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;        
+    }
+
+    &--side-back--box{
+        text-align: center;        
+        margin-bottom: 2rem;
+    }
+
+    &--side-back--description {
+        font-size: 1rem;
+    }
+
+}

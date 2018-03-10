@@ -11228,6 +11228,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var mobileMenu = new _MobileMenu2.default(); // You can name MobileMenu or whatever after import syntax
 
+new _RevealOnScroll2.default((0, _jquery2.default)("#our-beginning"), "70%");
 new _RevealOnScroll2.default((0, _jquery2.default)(".feature-item"), "85%");
 new _RevealOnScroll2.default((0, _jquery2.default)(".testimonial"), "60%");
 var stickyHeader = new _StickyHeader2.default();
