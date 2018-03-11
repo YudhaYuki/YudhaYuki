@@ -1,6 +1,28 @@
 .skill-section {
 
-    &--container {
+    &--paragraph-container{
+        text-align: center;
+        font-weight: 300;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;   
+
+        /* &--no-margin-top {
+            margin-top: 0;                    
+        } */
+
+        & p.pr {
+            line-height: 1.3rem;
+        }
+        
+        & p.pr:first-child {
+            line-height: normal;
+        }
+          
+    }
+
+    &--skills-container {
         width: 80%;
         background-color: #ddd;
         display: block;
@@ -17,11 +39,11 @@
         line-height: 40px;    
 
         &-one {
-            width: 85%;
+            width: 80%;
         }
 
         &-two {
-            width: 85%;
+            width: 80%;
         }
 
         &-three {
@@ -29,7 +51,7 @@
         }
 
         &-four {
-            width: 45%;
+            width: 30%;
         }
 
         &-five {
@@ -41,24 +63,25 @@
         }
 
         &-seven {
-            width: 50%;
+            width: 40%;
         }
 
         &-eight {
-            width: 45%;
+            width: 35%;
         }
 
         &-nine {
-            width: 60%;
+            width: 55%;
         }
 
         &-ten {
-            width: 50%;
+            width: 40%;
         }
     }
 }
   
 
-  
+
+
 
   

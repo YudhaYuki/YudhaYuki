@@ -357,6 +357,7 @@ img{
 
 a {
     color: #d59541;
+    text-decoration: none; 
 }
 
 .bg-video {
@@ -385,7 +386,7 @@ a {
     display: block;
 }
 
-@media (min-width: 33.125rem) {
+@media (min-width: 26.25rem) {
 
 .large-hero{
         border-bottom: 10px solid #2f5572
@@ -403,7 +404,7 @@ a {
         text-align: center;
     }
 
-@media (min-width: 50rem) {
+@media (min-width: 56.25rem) {
 
 .large-hero__text-content {
             padding-top: 60px
@@ -417,7 +418,21 @@ a {
         font-size: 2rem;
     }
 
-@media (min-width: 33.125rem) {
+@media (min-width: 26.25rem) {
+
+.large-hero__title {
+            font-size: 2.8rem
+    }
+    }
+
+@media (min-width: 56.25rem) {
+
+.large-hero__title {
+            font-size: 3.8rem
+    }
+    }
+
+@media (min-width: 75rem) {
 
 .large-hero__title {
             font-size: 4.8rem
@@ -431,7 +446,21 @@ a {
         margin: 0;
     }
 
-@media (min-width: 33.125rem) {
+@media (min-width: 26.25rem) {
+
+.large-hero__subtitle {
+            font-size: 1.9rem
+    }
+    }
+
+@media (min-width: 56.25rem) {
+
+.large-hero__subtitle {
+            font-size: 2.4rem
+    }
+    }
+
+@media (min-width: 75rem) {
 
 .large-hero__subtitle {
             font-size: 2.9rem
@@ -440,7 +469,7 @@ a {
 
 .large-hero__description{
         color: #d59541;
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: 100;
         text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
         max-width: 30rem;
@@ -448,10 +477,25 @@ a {
         margin-right: auto;
     }
 
-@media (min-width: 33.125rem) {
+@media (min-width: 26.25rem) {
 
 .large-hero__description{
-            font-size: 1.875rem
+            font-size: 1.3rem
+    }
+    }
+
+@media (min-width: 56.25rem) {
+
+.large-hero__description{
+            font-size: 1.5rem
+    }
+    }
+
+@media (min-width: 75rem) {
+
+.large-hero__description{
+            font-size: 2rem;
+            max-width: 35rem
     }
     }
 
@@ -465,6 +509,17 @@ a {
     position: relative;
 }
 
+.btn--behind-card-1 {
+        margin-bottom: 1rem;
+        width: 8rem;
+        border-radius: 5px;
+    }
+
+.btn--behind-card-2 {
+        width: 8rem;
+        border-radius: 5px;
+    }
+
 .btn--orange {
         background-color: #d59541;
     }
@@ -475,7 +530,7 @@ a {
 
     }
 
-@media (min-width: 33.125rem) {
+@media (min-width: 26.25rem) {
 
 .btn--large {
             font-size: 1.25rem
@@ -510,7 +565,7 @@ a {
         padding-right: 0;
     }
 
-@media (min-width: 50rem) {
+@media (min-width: 56.25rem) {
 
 .wrapper--no-padding-until-medium {
             padding-left: 1.125rem;
@@ -523,7 +578,7 @@ a {
         padding-right: 0;
     }
 
-@media (min-width: 63.125rem) {
+@media (min-width: 75rem) {
 
 .wrapper--no-padding-until-large {
             padding-left: 1.125rem;
@@ -545,7 +600,7 @@ a {
         margin-bottom: 1rem;
     }
 
-@media (min-width: 33.125rem) {
+@media (min-width: 26.25rem) {
 
 .wrapper--b-margin {
             margin-bottom: 3.875rem
@@ -557,7 +612,7 @@ a {
     padding: 1.2rem 0;
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 56.25rem) {
 
 .page-section {
         padding: 4.5rem 0
@@ -568,7 +623,7 @@ a {
         padding-bottom: 0;
     }
 
-@media (min-width: 50rem) {
+@media (min-width: 56.25rem) {
 
 .page-section--no-b-padding-until-medium {
             padding-bottom: 3.5rem
@@ -579,7 +634,7 @@ a {
         padding-bottom: 0;
     }
 
-@media (min-width: 63.125rem) {
+@media (min-width: 75rem) {
 
 .page-section--no-b-padding-until-large {
             padding-bottom: 3.5rem
@@ -591,13 +646,20 @@ a {
         color: #fff;
     }
 
-.page-section--testimonials {
+.page-section--contacts {
         background-color: #e0e6ef;
     }
 
-@media (min-width: 63.125rem) {
-            .page-section--testimonials.lazyloaded {
+@media (min-width: 75rem) {
+            .page-section--contacts.lazyloaded {
+                height: 50rem;
+                width: 100%;
                 background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
+                background-position: 0 -360px;
+                /* background-attachment: fixed; */
+                color: #fff;
+                border-bottom: 1px #eee solid;
+                padding-top: 50px;
                 background-size: cover;
             }
     }
@@ -612,7 +674,7 @@ a {
         color: #fff;        
     }
 
-@media (min-width: 33.125rem) {
+@media (min-width: 26.25rem) {
 
 .headline {
         font-size: 2.875rem
@@ -631,7 +693,7 @@ a {
         font-size: 1.2rem;
     }
 
-@media (min-width: 33.125rem) {
+@media (min-width: 26.25rem) {
 
 .headline--small {
             font-size: 1.875rem
@@ -682,13 +744,17 @@ a {
         margin-right: -45px;
       }
 
-.row--gutters > div {
+/* &--gutters-about > div :not(:last-child){
         padding-right: 65px;
-      }
+      } */
 
 .row--gutters-large > div {
         padding-right: 100px;
       }
+
+/* &--gutters > div {
+        padding-right: 65px;
+      } */
 
 .row--gutters-small > div {
         padding-right: 45px;
@@ -698,7 +764,35 @@ a {
         margin-bottom: 1rem;
       }
 
-@media (min-width: 50rem) {
+@media (min-width: 26.25rem) {
+        .row__medium-3 {
+          margin-left: auto;
+          margin-right: auto;
+          width: 75%;
+        }
+    }
+
+@media (min-width: 37.5rem) {
+        .row__medium-3 {
+          float: left;
+          width: 50%;
+        }
+    }
+
+@media (min-width: 56.25rem) {
+
+.row {
+    
+        /* &__medium-8 {
+          float: left;
+          width: 66.66%;
+        }
+    
+        &__medium-8--smaller {
+          width: 63%;
+        } */
+    
+    }
     
         .row__b-margin-until-medium {
           margin-bottom: 0;
@@ -706,7 +800,7 @@ a {
     
         .row__medium-3 {
           float: left;
-          width: 25%;
+          width: 33.33%;
         }
 
         .row__medium-4 {
@@ -722,21 +816,17 @@ a {
           float: left;
           width: 50%;
         }
-    
-        .row__medium-8 {
-          float: left;
-          width: 66.66%;
-        }
-    
-        .row__medium-8--smaller {
-          width: 63%;
-        }
     }
 
-@media (min-width: 63.125rem) {
+@media (min-width: 75rem) {
         
             .row__b-margin-until-large {
               margin-bottom: 0;
+            }
+
+            .row__medium-3 {
+              float: left;
+              width: 25%;
             }
         
             .row__large-4 {
@@ -765,7 +855,7 @@ a {
 
 /* Begin Equal Height Rules */
 
-@media (min-width: 50rem) {
+@media (min-width: 56.25rem) {
 
 .flexbox .row--equal-height-at-medium {
           display: flex
@@ -778,7 +868,7 @@ a {
           display: flex;
         }
 
-@media (min-width: 63.125rem) {
+@media (min-width: 75rem) {
 
 .flexbox .row--equal-height-at-large {
           display: flex
@@ -797,7 +887,7 @@ a {
         margin: 0 0 1.8rem 0;
     }
 
-@media (min-width: 33.125rem) {
+@media (min-width: 26.25rem) {
 
 .generic-content-container p {
             font-size: 1.125rem
@@ -814,7 +904,7 @@ a {
     text-align: center;
 }
 
-@media (min-width: 33.125rem) {
+@media (min-width: 26.25rem) {
 
 .section-title {
         font-size: 3.75rem
@@ -841,7 +931,7 @@ a {
         margin-bottom: .6rem;
     }
 
-@media (min-width: 33.125rem) {
+@media (min-width: 26.25rem) {
 
 .section-title__icon {
             position: relative;
@@ -867,7 +957,7 @@ a {
         margin: 0 auto;
     }
 
-@media (min-width: 33.125rem) {
+@media (min-width: 26.25rem) {
 
 .feature-item__icon {
             position: absolute;
@@ -883,7 +973,7 @@ a {
         text-align: center;
     }
 
-@media (min-width: 33.125rem) {
+@media (min-width: 26.25rem) {
 
 .feature-item__title {
             text-align: left;
@@ -892,62 +982,17 @@ a {
     }
     }
 
-.testimonial {
-    background-color: rgba(255, 255, 255, .8);
-    padding: 0 1.125rem 1px 1.125rem;
-    margin-bottom: 6.125rem;
-}
-
-@media (min-width: 63.125rem) {
-
-.testimonial {
-        margin-bottom: 0;        
-        padding: 0 1.8125rem 1px 1.8125rem
-}
-    }
-
-.testimonial--last {
-        margin-bottom: 0;
-    }
-
-.testimonial__photo {
-        border-radius: 50%;
-        overflow: hidden;
-        width:160px;
-        height: 160px;
-        margin: 0 auto -80px auto;
-        position: relative;
-        top: -80px;
-        border: 6px solid rgba(255, 255, 255, .8);
-    }
-
-.testimonial__title {
-        color: #2f5572;
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: 500;
-        margin: 0;
-    }
-
-.testimonial__subtitle {
-        color: #d59541;
-        text-align: center;
-        font-size: .9375rem;
-        font-weight: 400;
-        margin: .25rem 0 1rem 0;
-    }
-
 /* 
 Do not edit modules/_sprites directly as it is generated automatically by Gulp.
 Instead, edit gulp/templates/sprite
 */
 
 .icon {
-            background-image: url('../../assets/images/sprites/sprite-e41a6936.svg');    
+            background-image: url('../../assets/images/sprites/sprite-daf03695.svg');    
         }
 
 .no-svg .icon {
-            background-image: url('../../assets/images/sprites/sprite-e41a6936.png');    
+            background-image: url('../../assets/images/sprites/sprite-daf03695.png');    
         }
 
 .icon--YY-logo {
@@ -959,79 +1004,61 @@ Instead, edit gulp/templates/sprite
 .icon--YY-logo-white {
         width: 159px;
         height: 55px;
-        background-position: 0 55.86206896551724%;
+        background-position: 0 86.17021276595744%;
     }
 
-.icon--clear-view-escapes {
-        width: 144.4px;
-        height: 61.53px;
-        background-position: 0 76.55131054432567%;
-    }
-
-.icon--comment {
-        width: 66px;
-        height: 66px;
-        background-position: 0 99.83154121863798%;
+.icon--email {
+        width: 26px;
+        height: 26px;
+        background-position: 0 100%;
     }
 
 .icon--facebook {
         width: 23.23px;
         height: 44.01px;
-        background-position: 71.60858087272888% 53.82238612578491%;
+        background-position: 71.60858087272888% 81.41112618724559%;
     }
 
-.icon--fire {
-        width: 58px;
-        height: 66px;
-        background-position: 15.865384615384615% 99.83154121863798%;
-    }
-
-.icon--globe {
-        width: 66px;
-        height: 66px;
-        background-position: 30.392156862745097% 99.83154121863798%;
+.icon--github {
+        width: 26px;
+        height: 26px;
+        background-position: 91.24330357142857% 74.65437788018433%;
     }
 
 .icon--instagram {
         width: 44.01px;
         height: 44.01px;
-        background-position: 64.83406590850949% 53.82238612578491%;
+        background-position: 64.83406590850949% 81.41112618724559%;
+    }
+
+.icon--linkedin {
+        width: 26px;
+        height: 26px;
+        background-position: 85.43973214285714% 74.65437788018433%;
     }
 
 .icon--mail {
         width: 66px;
         height: 50px;
-        background-position: 38.970588235294116% 54.91525423728814%;
+        background-position: 38.970588235294116% 83.93782383419689%;
     }
 
-.icon--rain {
-        width: 66px;
-        height: 66px;
-        background-position: 46.568627450980394% 99.83154121863798%;
-    }
-
-.icon--star {
-        width: 66px;
-        height: 66px;
-        background-position: 62.745098039215684% 99.83154121863798%;
+.icon--mobilephone {
+        width: 26px;
+        height: 26px;
+        background-position: 97.046875% 74.65437788018433%;
     }
 
 .icon--twitter {
         width: 53.78px;
         height: 44.06px;
-        background-position: 53.5433820379801% 53.83132850402073%;
-    }
-
-.icon--wifi {
-        width: 62px;
-        height: 66px;
-        background-position: 78.15533980582525% 99.83154121863798%;
+        background-position: 53.5433820379801% 81.43158741329044%;
     }
 
 .icon--youtube {
         width: 36.75px;
         height: 44px;
-        background-position: 79.13550600343054% 53.820598006644516%;
+        background-position: 79.13550600343054% 81.4070351758794%;
     }
 
 .site-footer {
@@ -1039,7 +1066,15 @@ Instead, edit gulp/templates/sprite
     color: #fff;
     padding: .5rem 0;
     text-align: center;
+    border-top: 5px solid #fff;
 }
+
+@media (min-width: 26.25rem) {
+
+.site-footer {
+        border-bottom: 10px solid #2f5572
+}
+    }
 
 .site-footer__text {
         display: block;
@@ -1047,7 +1082,7 @@ Instead, edit gulp/templates/sprite
         font-weight: 200;
     }
 
-@media (min-width: 50rem) {
+@media (min-width: 56.25rem) {
 
 .site-footer__text {
             display: inline;
@@ -1068,7 +1103,7 @@ Instead, edit gulp/templates/sprite
         background-color: rgba(47,85,114, .55);
     }
 
-@media (min-width: 50rem) {
+@media (min-width: 56.25rem) {
 
 .site-header {
         position: fixed;
@@ -1080,7 +1115,7 @@ Instead, edit gulp/templates/sprite
         }
     }
 
-@media (min-width: 50rem) {
+@media (min-width: 56.25rem) {
 
 .site-header__btn-container {
             float: right
@@ -1102,7 +1137,7 @@ Instead, edit gulp/templates/sprite
         padding: 1.25rem 2.25rem;
     }
 
-@media (min-width: 50rem) {
+@media (min-width: 56.25rem) {
 
 .site-header__logo {
             left: auto;
@@ -1171,7 +1206,7 @@ Instead, edit gulp/templates/sprite
             transition: transform .3s ease-out, -webkit-transform .3s ease-out;            
         }
 
-@media (min-width: 50rem) {
+@media (min-width: 56.25rem) {
 
 .site-header__menu-icon {
             display: none
@@ -1205,7 +1240,7 @@ Instead, edit gulp/templates/sprite
         text-align: center;
     }
 
-@media (min-width: 50rem) {
+@media (min-width: 56.25rem) {
 
 .site-header__menu-content {
             opacity: 1;
@@ -1227,7 +1262,7 @@ Instead, edit gulp/templates/sprite
     padding-top: 10px;
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 56.25rem) {
 
 .primary-nav {
         padding-top: 0
@@ -1250,7 +1285,7 @@ Instead, edit gulp/templates/sprite
                     transform: translateY(-.1rem);
         }
 
-@media (min-width: 50rem) {
+@media (min-width: 56.25rem) {
 
 .primary-nav--pull-right {
             float: right
@@ -1274,7 +1309,7 @@ Instead, edit gulp/templates/sprite
         padding-right: 5px;
     }
 
-@media (min-width: 50rem) {
+@media (min-width: 56.25rem) {
 
 .primary-nav li {
             padding-right: 1.25rem;
@@ -1287,7 +1322,7 @@ Instead, edit gulp/templates/sprite
         padding-right: 0;
     }
 
-@media (min-width: 50rem) {
+@media (min-width: 56.25rem) {
 
 .primary-nav li:last-child {
             padding-right: 1.25rem
@@ -1304,7 +1339,7 @@ Instead, edit gulp/templates/sprite
         background-color: rgba(47,85,114, .5);
     }
 
-@media (min-width: 50rem) {
+@media (min-width: 56.25rem) {
 
 .primary-nav a {
             font-size: 1rem;
@@ -1388,16 +1423,41 @@ Instead, edit gulp/templates/sprite
     text-align: center;
 }
 
+.social-icons-dark {
+        border: 1 solid #2f5572;
+    }
+
 .social-icons__icon {
-        background-color: #d59541;
         display: inline-block;
-        margin: 0 5px 5px 5px;
-        width: 33%;
-        height: 72px;
+        height: 35px;
         position: relative;
     }
 
-@media (min-width: 33.125rem) {
+.social-icons__icon-gold {
+            background-color: #d59541;    
+            margin: 0 5px 5px 5px;     
+            width: 33%;   
+            height: 72px;
+            width: 42px;
+        }
+
+@media (min-width: 26.25rem) {
+
+.social-icons__icon {
+            width: 52px;
+            margin: 0 5px
+    }
+    }
+
+@media (min-width: 56.25rem) {
+
+.social-icons__icon {
+            width: 62px;
+            margin: 0 5px
+    }
+    }
+
+@media (min-width: 75rem) {
 
 .social-icons__icon {
             width: 72px;
@@ -1600,7 +1660,29 @@ Instead, edit gulp/templates/sprite
     }
 }
 
-.skill-section--container {
+.skill-section--paragraph-container{
+        text-align: center;
+        font-weight: 300;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+          
+    }
+
+/* &--no-margin-top {
+            margin-top: 0;                    
+        } */
+
+.skill-section--paragraph-container p.pr {
+            line-height: 1.3rem;
+        }
+
+.skill-section--paragraph-container p.pr:first-child {
+            line-height: normal;
+        }
+
+.skill-section--skills-container {
         width: 80%;
         background-color: #ddd;
         display: block;
@@ -1618,11 +1700,11 @@ Instead, edit gulp/templates/sprite
     }
 
 .skill-section--items-one {
-            width: 85%;
+            width: 80%;
         }
 
 .skill-section--items-two {
-            width: 85%;
+            width: 80%;
         }
 
 .skill-section--items-three {
@@ -1630,7 +1712,7 @@ Instead, edit gulp/templates/sprite
         }
 
 .skill-section--items-four {
-            width: 45%;
+            width: 30%;
         }
 
 .skill-section--items-five {
@@ -1642,19 +1724,19 @@ Instead, edit gulp/templates/sprite
         }
 
 .skill-section--items-seven {
-            width: 50%;
+            width: 40%;
         }
 
 .skill-section--items-eight {
-            width: 45%;
+            width: 35%;
         }
 
 .skill-section--items-nine {
-            width: 60%;
+            width: 55%;
         }
 
 .skill-section--items-ten {
-            width: 50%;
+            width: 40%;
         }
 
 .card {
@@ -1786,18 +1868,142 @@ Instead, edit gulp/templates/sprite
     text-align: center;
     white-space: nowrap;
     width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .line-on-side:before,
     .line-on-side:after {
-        border-top: 10px double #2f5572;
+        border-top: 7px double #2f5572;
         content: '';
         display: table-cell;
-        width: 50%;
+        width: 40%;
         border-top-width: 6px;
     }
 
 .line-on-side--white:before,
         .line-on-side--white:after {
-            border-top: 10px double white;
+            border-top: 7px double white;
         }
+
+.contact {
+    background-color: rgba(255, 255, 255, .8);
+    padding: 0 1.125rem 1px 1.125rem;
+    margin-bottom: 6.125rem;
+}
+
+@media (min-width: 75rem) {
+
+.contact {
+        margin-bottom: 10rem;        
+        padding: 0 1.8125rem 1px 1.8125rem
+}
+    }
+
+.contact--last {
+        margin-bottom: 0;
+    }
+
+.contact__photo {
+        border-radius: 50%;
+        overflow: hidden;
+        width:160px;
+        height: 160px;
+        margin: 0 auto -80px auto;
+        position: relative;
+        top: -80px;
+        border: 6px solid rgba(255, 255, 255, .8);
+    }
+
+.contact__title {
+        color: #2f5572;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0;
+    }
+
+.contact__subtitle {
+        color: #d59541;
+        text-align: center;
+        font-size: .9375rem;
+        font-weight: 400;
+        margin: .25rem 0 1rem 0;
+    }
+
+.form-contact {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.125rem; /* 18px */
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 1em;
+    color: #fff;
+}
+
+.form-group:not(:last-child) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .form-group:not(:last-child) {
+        width: 50%;
+    }
+}
+
+.form-group input,
+.form-group textarea,
+.form-group button {
+    padding: .5rem 1rem;
+    border: 0;
+}
+
+.form-group label,
+.form-group input {
+    margin-right: 1rem;
+}
+
+.form-group input {
+    flex: 1;
+    background-color: #54bd8f;
+    color: #444;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.form-group input:focus {
+    background-color: rgba(255, 255, 255, .3);
+    outline: none;
+}
+
+.form-group textarea,
+.form-group button {
+    display: block;
+    width: 100%;
+    border-radius: .2em;
+}
+
+.form-group textarea {
+    margin-top: .25rem;
+    margin-bottom: 1rem;
+}
+
+.form-group button {
+    padding: .5em 1em; /* using em to keep it in proportion inside component */
+    background: #232323;
+    color: #fff;
+    font-size: 1.5rem; /* using rem to be proportional to the rest of the page */
+    font-weight: 600;
+}
+
+.form-label-required::after {
+    content: '*';
+}

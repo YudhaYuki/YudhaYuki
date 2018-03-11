@@ -7,6 +7,17 @@
     transition: all .2s;
     position: relative;
 
+    &--behind-card-1 {
+        margin-bottom: 1rem;
+        width: 8rem;
+        border-radius: 5px;
+    }
+
+    &--behind-card-2 {
+        width: 8rem;
+        border-radius: 5px;
+    }
+
     &--orange {
         background-color: $mainOrange;
     }

@@ -1,0 +1,118 @@
+.contact {
+    background-color: rgba(255, 255, 255, .8);
+    padding: 0 1.125rem 1px 1.125rem;
+    margin-bottom: 6.125rem;
+
+    @mixin atLarge {
+        margin-bottom: 10rem;        
+        padding: 0 1.8125rem 1px 1.8125rem;        
+    }
+
+    &--last {
+        margin-bottom: 0;
+    }
+
+    &__photo {
+        border-radius: 50%;
+        overflow: hidden;
+        width:160px;
+        height: 160px;
+        margin: 0 auto -80px auto;
+        position: relative;
+        top: -80px;
+        border: 6px solid rgba(255, 255, 255, .8);
+    }
+
+    &__title {
+        color: $mainBlue;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    &__subtitle {
+        color: $mainOrange;
+        text-align: center;
+        font-size: .9375rem;
+        font-weight: 400;
+        margin: .25rem 0 1rem 0;
+    }
+}
+
+.form-contact {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.125rem; /* 18px */
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 1em;
+    color: #fff;
+}
+
+.form-group:not(:last-child) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .form-group:not(:last-child) {
+        width: 50%;
+    }
+}
+
+.form-group input,
+.form-group textarea,
+.form-group button {
+    padding: .5rem 1rem;
+    border: 0;
+}
+
+.form-group label,
+.form-group input {
+    margin-right: 1rem;
+}
+
+.form-group input {
+    flex: 1;
+    background-color: #54bd8f;
+    color: #444;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.form-group input:focus {
+    background-color: rgba(255, 255, 255, .3);
+    outline: none;
+}
+
+.form-group textarea,
+.form-group button {
+    display: block;
+    width: 100%;
+    border-radius: .2em;
+}
+
+.form-group textarea {
+    margin-top: .25rem;
+    margin-bottom: 1rem;
+}
+
+.form-group button {
+    padding: .5em 1em; /* using em to keep it in proportion inside component */
+    background: #232323;
+    color: #fff;
+    font-size: 1.5rem; /* using rem to be proportional to the rest of the page */
+    font-weight: 600;
+}
+
+.form-label-required::after {
+    content: '*';
+}

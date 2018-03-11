@@ -6,21 +6,23 @@
     text-align: center;
     white-space: nowrap;
     width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 
     &:before,
     &:after {
-        border-top: 10px double $mainBlue;
+        border-top: 7px double $mainBlue;
         content: '';
         display: table-cell;
-        width: 50%;
+        width: 40%;
         border-top-width: 6px;
     }
 
     &--white {
-        
+
         &:before,
         &:after {
-            border-top: 10px double white;
+            border-top: 7px double white;
         }
     }
 }

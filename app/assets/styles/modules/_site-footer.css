@@ -3,6 +3,11 @@
     color: #fff;
     padding: .5rem 0;
     text-align: center;
+    border-top: 5px solid #fff;    
+    
+    @mixin atSmall {
+        border-bottom: 10px solid $mainBlue; 
+    }
 
     &__text {
         display: block;
