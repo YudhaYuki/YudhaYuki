@@ -47,35 +47,35 @@
         }
 
         &-three {
-            width: 40%;
-        }
-
-        &-four {
             width: 30%;
         }
 
+        &-four {
+            width: 25%;
+        }
+
         &-five {
-            width: 35%;
+            width: 20%;
         }
 
         &-six {
-            width: 70%;
+            width: 65%;
         }
 
         &-seven {
-            width: 40%;
+            width: 30%;
         }
 
         &-eight {
-            width: 35%;
+            width: 20%;
         }
 
         &-nine {
-            width: 55%;
+            width: 45%;
         }
 
         &-ten {
-            width: 40%;
+            width: 35%;
         }
     }
 }

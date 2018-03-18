@@ -1708,35 +1708,35 @@ Instead, edit gulp/templates/sprite
         }
 
 .skill-section--items-three {
-            width: 40%;
-        }
-
-.skill-section--items-four {
             width: 30%;
         }
 
+.skill-section--items-four {
+            width: 25%;
+        }
+
 .skill-section--items-five {
-            width: 35%;
+            width: 20%;
         }
 
 .skill-section--items-six {
-            width: 70%;
+            width: 65%;
         }
 
 .skill-section--items-seven {
-            width: 40%;
+            width: 30%;
         }
 
 .skill-section--items-eight {
-            width: 35%;
+            width: 20%;
         }
 
 .skill-section--items-nine {
-            width: 55%;
+            width: 45%;
         }
 
 .skill-section--items-ten {
-            width: 40%;
+            width: 35%;
         }
 
 .card {
