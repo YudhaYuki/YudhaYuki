@@ -14,6 +14,7 @@
     "normalize.css": "^8.0.0",
     "picturefill": "^3.0.2",
     "popper.js": "^1.12.9",
+    "typed.js": "^2.0.6",
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
